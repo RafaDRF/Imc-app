@@ -1,65 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/indexTXT"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@color/purple_gothic"
+        android:padding="40dp"
         android:text="@string/text_type_index"
-        android:textSize="48sp"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:background="@color/purple_gothic"
-        android:padding="40dp" />
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/heightTXT"
-        style="@style/aligment_sinc"
+        style="@style/boxes_limits"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/text_height"
         android:textSize="16sp"
-        android:layout_marginTop="16dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indexTXT" />
 
     <EditText
         android:id="@+id/heightEDT"
-        style="@style/aligment_sinc"
-        android:hint="@string/edit_height_ex"
+        style="@style/boxes_limits"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="@string/edit_height_ex"
+        android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:importantForAutofill="no" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightTXT"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/WeightTXT"
-        style="@style/aligment_sinc"
+        style="@style/boxes_limits"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="@string/text_weight"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightEDT" />
 
     <EditText
         android:id="@+id/WeightEDT"
-        style="@style/aligment_sinc"
-        android:hint="@string/edit_weight_ex"
+        style="@style/boxes_limits"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="@string/edit_weight_ex"
+        android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:importantForAutofill="no" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WeightTXT"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/calcBTN"
-        android:text="@string/text_button_calc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="40dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="@color/purple_gothic"
-        android:textColor="@color/white" />
+        android:text="@string/text_button_calc"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WeightEDT" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

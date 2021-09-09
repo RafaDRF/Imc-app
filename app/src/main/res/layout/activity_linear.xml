@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/indexTXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_type_index"
+        android:textSize="48sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@color/purple_gothic"
+        android:padding="40dp" />
+
+    <TextView
+        android:id="@+id/heightTXT"
+        style="@style/aligment_sinc"
+        android:text="@string/text_height"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/heightEDT"
+        style="@style/aligment_sinc"
+        android:hint="@string/edit_height_ex"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/WeightTXT"
+        style="@style/aligment_sinc"
+        android:text="@string/text_weight"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/WeightEDT"
+        style="@style/aligment_sinc"
+        android:hint="@string/edit_weight_ex"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/calcBTN"
+        android:text="@string/text_button_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="40dp"
+        android:backgroundTint="@color/purple_gothic"
+        android:textColor="@color/white" />
+
+</LinearLayout>
