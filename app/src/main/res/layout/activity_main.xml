@@ -29,6 +29,7 @@
     <EditText
         android:id="@+id/heightEDT"
         style="@style/aligment_sinc"
+        android:hint="@string/edit_height_ex"
         android:ems="10"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
@@ -44,6 +45,7 @@
     <EditText
         android:id="@+id/WeightEDT"
         style="@style/aligment_sinc"
+        android:hint="@string/edit_weight_ex"
         android:ems="10"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
@@ -56,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="80dp"
+        android:layout_margin="40dp"
         android:backgroundTint="@color/purple_gothic"
         android:textColor="@color/white" />
 

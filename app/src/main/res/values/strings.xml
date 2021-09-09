@@ -4,5 +4,6 @@
     <string name="text_height">Altura (m)</string>
     <string name="text_weight">Peso (kg)</string>
     <string name="text_button_calc">Calcular</string>
-
+    <string name="edit_height_ex">1.70</string>
+    <string name="edit_weight_ex">70</string>
 </resources>
