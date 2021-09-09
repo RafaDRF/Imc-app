@@ -49,7 +49,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/WeightTXT"
+        android:id="@+id/weightTXT"
         style="@style/boxes_limits"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/heightEDT" />
 
     <EditText
-        android:id="@+id/WeightEDT"
+        android:id="@+id/weightEDT"
         style="@style/boxes_limits"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WeightTXT"
+        app:layout_constraintTop_toBottomOf="@+id/weightTXT"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
@@ -84,6 +84,6 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WeightEDT" />
+        app:layout_constraintTop_toBottomOf="@+id/weightEDT" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
